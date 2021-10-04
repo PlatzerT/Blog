@@ -25,7 +25,7 @@ export default function ArticlePage({ article }: Props) {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-5xl mx-auto">
       <Link href="/blog">
         <a className="flex items-center self-start space-x-2 mb-9 font-title">
           <svg
@@ -44,8 +44,8 @@ export default function ArticlePage({ article }: Props) {
         </a>
       </Link>
       <img className="object-cover w-full h-[500px]" src={getImage(image)} />
-      <div className="flex items-start justify-between">
-        <div className="mt-8 text-4xl font-bold text-gray-900 font-title">
+      <div className="flex items-start justify-between my-14">
+        <div className="mt-8 text-5xl font-bold text-gray-900 font-title">
           {title}
         </div>
         <div className="flex items-center mt-8 space-x-2">
@@ -63,7 +63,7 @@ export default function ArticlePage({ article }: Props) {
             <div className="font-bold text-gray-900">
               {userInfo.first_name} {userInfo.last_name}
             </div>
-            <div className="flex-shrink-0 text-sm font-semibold text-blue-400">
+            <div className="flex-shrink-0 text-xs font-semibold text-blue-400">
               {new Date(date_created).toDateString()}
             </div>
           </div>

@@ -35,7 +35,7 @@ export default function Article({ details }: Props) {
           <div className="text-xl font-bold text-gray-900 font-title">
             {title}
           </div>
-          <div className="mt-4 overflow-hidden text-gray-500 intro-text overflow-ellipsis">
+          <div className="mt-4 overflow-hidden text-sm text-gray-500 intro-text overflow-ellipsis">
             {introduction}
           </div>
           <div className="flex items-center mt-8 space-x-2">
